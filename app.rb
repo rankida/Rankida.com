@@ -1,5 +1,5 @@
-require "rubygems"
-require "sinatra"
+require 'rubygems'
+require 'sinatra'
 
 get "/" do
   "<h1>Welcome to <i>Rankida</i>.com</h1><br />Light the fuse..."
