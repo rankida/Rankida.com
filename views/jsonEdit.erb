@@ -1,0 +1,86 @@
+<% content_for :head do %>
+  <link href="/css/jsonEdit.css" rel="stylesheet">
+<% end %>
+
+<h1>Rankida's JSON Editor</h1>
+<p>Simple, but does the job. Much like it's author.</p>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#jsonTab" data-toggle="tab">Text Editor</a></li>
+  <li><a href="#viewerTab" data-toggle="tab">Object Viewer</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="jsonTab" class="tab-pane active">
+    <textarea class="txt" id="jsonText"></textarea>
+    <span id="image" class="fail" style="background-image: url('img/tick_cross.png'); display:inline-block; height:47px; width:50px;"></span>
+    <div></div>
+    <button id='format' type="button" class="btn btn-primary">Format JSON</button>
+    <button id='clear' type="button" class="btn">Clear</button>
+    <button id='whitespace' type="button" class="btn">Remove Whitespace</button>
+    <p></p>
+    <div id="alert" class="alert alert-error"></div>
+  </div>
+  <div id="viewerTab" class="tab-pane">
+    <div id="viewer">
+      <h2>Comming soon</h2>
+      <p>So get excited!</p>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+
+function invalidJSON(text) {
+  if (text === "") {
+    return false;
+  }
+  
+  try {
+    JSON.parse(text);
+    return false;
+  } catch (ex) {
+    return "Invalid JSON: " + ex.message;
+  }
+}
+
+function processText () {
+  var errormsg = invalidJSON($jsonText.val().trim())
+  if (errormsg) {
+    $img.addClass('fail');
+    $img.removeClass('pass');
+    $('#alert').html(errormsg).show();
+  } else {  
+    $img.addClass('pass');
+    $img.removeClass('fail');
+    $('#alert').html("").hide();
+  }
+}
+
+function stripWhitespace (text) {
+  return text.replace(/(\s|\r\n|\r|\n)/gm, '');
+}
+
+$(document).ready(function (){
+  $img = $('#image');
+  $jsonText = $('#jsonText');
+  
+  $('#alert').hide();
+  processText();
+  
+  $('#clear').click(function () {
+    $jsonText.val("");
+  });
+  
+  $('#whitespace').click(function(){
+    $jsonText.val(stripWhitespace($jsonText.val()));
+  })
+  
+  $jsonText.keyup(processText);
+  
+  $('#format').click(function (){
+    $jsonText.val(js_beautify($jsonText.val()));
+  });
+  
+});
+</script>
