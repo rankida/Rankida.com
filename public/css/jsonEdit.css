@@ -17,7 +17,8 @@ body {
 }
 .container {
     background: white;
-    padding: 20px 25px 10px;
+    min-height: 610px;
+    padding: 20px 25px 0px;
     
     -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 5px 6px 0;
     -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 5px 6px 0;
