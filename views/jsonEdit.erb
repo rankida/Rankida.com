@@ -86,7 +86,16 @@ function stripWhitespace (text) {
 
 function visualiseJson ($viewerDiv, jsonText) {
   $viewerDiv.empty();
-  jsonViewer.create($viewerDiv, JSON.parse(jsonText));
+  if (!jsonText) {
+    $viewerDiv.html("<div class='alert alert-info'>Please enter some JSON into the editor</div>");
+  }
+  else {
+    try {
+      jsonViewer.create($viewerDiv, JSON.parse(jsonText));
+    } catch (ex) {
+      $viewerDiv.html("<div class='alert alert-error'>The JSON you entered is invalid. View the editor for more details.</div>");
+    }
+  } 
 }
 
 function exampleJsonString() {
