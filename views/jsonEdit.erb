@@ -1,13 +1,15 @@
 <% content_for :head do %>
+  <script type="text/javascript" src="js/jsonViewer.js"></script>
   <link href="/css/jsonEdit.css" rel="stylesheet">
+  <link href="/css/jsonViewer.css" rel="stylesheet">
 <% end %>
 
 <h1>Rankida's JSON Editor</h1>
 <p>Simple, but does the job. Much like it's author.</p>
 
 <ul class="nav nav-tabs">
-  <li class="active"><a href="#jsonTab" data-toggle="tab">Text Editor</a></li>
-  <li><a href="#viewerTab" data-toggle="tab">Object Viewer</a></li>
+  <li class="active"><a id='#editorLink' href="#jsonTab" data-toggle="tab">Text Editor</a></li>
+  <li><a id='viewerLink' href="#viewerTab" data-toggle="tab">Object Viewer</a></li>
   <li><a href="#aboutTab" data-toggle="tab">About</a></li>
 </ul>
 
@@ -35,9 +37,13 @@
     <button id='format' type="button" class="btn btn-primary">Format JSON</button>
     <button id='clear' type="button" class="btn">Clear</button>
     <button id='whitespace' type="button" class="btn">Remove Whitespace</button>
+    <div style="float:right">
+      <button id='example' type="button" class="btn btn-info">Example JSON</button>
+    </div>
     <p></p>
     <div id="alert" class="alert alert-error"></div>
   </div>
+  
   <div id="viewerTab" class="tab-pane">
     <div id="viewer">
       <h2>Comming soon</h2>
@@ -78,9 +84,29 @@ function stripWhitespace (text) {
   return text.replace(/(\s|\r\n|\r|\n)/gm, '');
 }
 
+function visualiseJson ($viewerDiv, jsonText) {
+  $viewerDiv.empty();
+  jsonViewer.create($viewerDiv, JSON.parse(jsonText));
+}
+
+function exampleJsonString() {
+  return JSON.stringify(
+    {
+      name: "Robert Burns",
+      born: new Date("01 25 1759"),
+      died: "21 July 1796",
+      works: [
+        { title: "Tam O' Shanter", year:1790, first_line: "When chapman billies leave the street"},
+        { title: "Address To A Haggis", year: 1786, first_line: "Fair fa' your honest, sonsie face"},
+        { title: "A Red, Red Rose", year: 1794, first_line: "O my Luve's like a red, red rose"}
+      ]
+    });
+}
+
 $(document).ready(function (){
   $img = $('#image');
   $jsonText = $('#jsonText');
+  $viewer = $('#viewer');
   
   $('#alert').hide();
   processText();
@@ -97,6 +123,14 @@ $(document).ready(function (){
   
   $('#format').click(function (){
     $jsonText.val(js_beautify($jsonText.val()));
+  });
+  
+  $('#example').click(function(){
+    $jsonText.val(js_beautify(exampleJsonString()));
+  });
+  
+  $('#viewerLink').on('shown', function (e) {
+    visualiseJson($viewer, $jsonText.val());
   });
   
 });

@@ -25,7 +25,7 @@ var jsonViewer = jsonViewer || (function() {
     }
 
     function nativeHtml(key, val) {
-      return "<span class='icon'>&gt;&gt;</span> " + key + " : \"<i>" + val + "</i>\"";
+      return "<span class='icon'>&gt;</span> " + key + " : \"<i>" + val + "</i>\"";
     }
 
     function divAppender(key, val) {
@@ -46,8 +46,9 @@ var jsonViewer = jsonViewer || (function() {
           data = JSON.parse(json);
       } catch (ex) { }
       
+      html = "";
       traversePrinter(data, {start:divAppender, end:function(){ html += '</div>'}});
-      $div.append(html);
+      $div.html(html);
     }
     
     return {
