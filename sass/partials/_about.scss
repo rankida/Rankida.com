@@ -1,0 +1,110 @@
+/* ------------------ ABOUT ------------------ */
+
+.about {
+	position: relative;
+	text-align: center;
+}
+
+
+/* --------------------- */
+/* SOCIAL NETWORK
+/* --------------------- */
+
+#social-network {
+	background-image: image-url('sky.jpg');
+	text-align: center;
+	
+	h2 {
+		color: #fff;
+		font-size: 3em;
+	}
+
+	@include max-screen($screen-xsmall) {
+		h2 {
+			font-size: 2em;
+		}
+	}
+}
+
+.social-icon {
+	li {
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-top: 30px;
+
+		a {
+			@include border-radius(50%);
+			@include transition-property(background-color);
+			@include transition-duration(0.2s);
+			@include transition-timing-function(linear);
+
+			display: block;
+			width: 60px;
+			height: 60px;
+			font-size: 33px;
+			line-height: 57px;
+			text-align: center;
+			color: #fff;
+			border: 2px solid #fff;
+
+			&:hover {
+				background-color: #fff;
+				color: $secondary-accent-color;
+			}
+		}
+	}
+
+	@include max-screen($screen-xsmall) {
+		width: 100%;
+		text-align: center;
+
+		li {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+	}
+}
+
+/* --------------------- */
+/* SKILLS
+/* --------------------- */
+
+.skills {
+	.skill-name {
+		display: block;
+		font-size: 1.5em;
+		color: $heading-text-color;
+		font-weight: 400;
+	}
+}
+
+.chart {
+	@include inline-block;
+
+	position: relative;
+	width: 150px;
+	height: 150px;
+	margin-bottom: 30px;
+
+	canvas {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.percent {
+		@include inline-block;
+
+		line-height: 150px;
+		z-index: 2;
+		font-family: $secondary-font-family;
+		font-size: 2em;
+		color: $primary-accent-color;
+
+		&:after {
+			margin-left: 0.1em;
+		}
+	}
+}
+
+

@@ -1,0 +1,71 @@
+// ------------------------------------------------
+// Skin Styles
+// This file should be imported in each skin file
+//-------------------------------------------------
+
+a {
+	color: $accent-color;
+
+	&:hover, &:focus {
+		color: $link-hover-color;
+	}
+}
+
+.btn-primary {
+	background-color: $primary-accent-color;
+	border-color: $primary-accent-color;
+
+	&:hover, &:focus, &:active, &.active {
+		background-color: $primary-accent-color;
+		border-color: darken($primary-accent-color, 5%);
+	}
+
+	&:active:focus, &.active:focus {
+		background-color: darken($primary-accent-color, 5%);
+		border-color: darken($primary-accent-color, 15%);
+	}
+}
+
+.section-heading h2 {
+	color: $primary-accent-color;
+}
+
+.service-item {
+	.service-icon,
+	.service-text a.read-more {
+		color: $primary-accent-color;
+	}
+}
+
+.work-item-filters li a:hover, 
+.work-item-filters li a.active {
+	background-color: $primary-accent-color;
+}
+
+.work-item-list .image-overlay {
+	background-color: rgba(82, 82, 82, 0.9);
+}
+
+.team-member .team-name {
+	background-color: $primary-accent-color;
+}
+
+
+.twitter-stream {
+	background-color: darken($primary-accent-color, 10%);
+
+	.twitter-icon {
+		background-color: darken($primary-accent-color, 15%);
+
+		i {
+			color: $primary-accent-color;
+		}
+	}
+}
+
+.chart .percent {
+	color: $primary-accent-color;
+}
+
+
+

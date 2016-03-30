@@ -1,0 +1,13 @@
+/* Skin: Deep Sky Blue */
+
+@import "modules/all";
+
+$accent-color: #8AA026;
+$link-hover-color: darken($accent-color, 8%);
+$primary-accent-color: $accent-color;
+$secondary-accent-color: #808080;
+
+@import "_skin-styles";
+
+
+

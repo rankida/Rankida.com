@@ -1,0 +1,102 @@
+/* ------------------ CONTACT ------------------ */
+
+/* --------------------- */
+/* CONTACT INFO
+/* --------------------- */
+
+.contact-info {
+	li {
+		padding-bottom: 30px;
+	}
+
+	h3, i {
+		color: $heading-text-color;
+	}
+
+	h3, p {
+		padding-left: 52px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+	i {
+		font-size: 40px;
+	}
+
+	@include max-screen($screen-small) {
+		text-align: center;
+
+		i {
+			width: 100%;
+		}
+
+		h3, p {
+			padding-left: 0;
+		}
+	}
+}
+
+@include max-screen($screen-xsmall) {
+	.contact {
+		padding-bottom: 0;
+	}
+}
+
+/* --------------------- */
+/* CONTACT FORM
+/* --------------------- */
+
+.contact-form {
+	overflow: hidden;
+	margin-bottom: 40px;
+
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		@include inline-block;
+		@include box-sizing(border-box);
+
+		padding: 12px;
+		margin-bottom: 7px; 
+		min-height: 3em;
+		border: none;
+		background-color: darken($section-bg-color-default, 3%);
+	}
+
+	.form-group {
+		margin-bottom: 0;
+	} 
+
+	textarea {
+		width: 100%;
+		display: block;
+		padding: 14px;
+		min-height: 130px;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		@include border-radius(3px);
+		@include box-shadow(none !important);
+
+		&:focus {
+			outline: none;
+		}
+
+	}
+
+	.alert,
+	label {
+		display: none;
+	}
+
+	@include max-screen($screen-xsmall) {
+		.btn-primary {
+			width: 100%;
+		}
+	}
+}
+

@@ -1,0 +1,56 @@
+/* Skin: Deep Sky Blue */
+a {
+  color: #CD853F;
+}
+a:hover, a:focus {
+  color: #b4712f;
+}
+
+.btn-primary {
+  background-color: #CD853F;
+  border-color: #CD853F;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+  background-color: #CD853F;
+  border-color: #c07832;
+}
+.btn-primary:active:focus, .btn-primary.active:focus {
+  background-color: #c07832;
+  border-color: #985f28;
+}
+
+.section-heading h2 {
+  color: #CD853F;
+}
+
+.service-item .service-icon,
+.service-item .service-text a.read-more {
+  color: #CD853F;
+}
+
+.work-item-filters li a:hover,
+.work-item-filters li a.active {
+  background-color: #CD853F;
+}
+
+.work-item-list .image-overlay {
+  background-color: rgba(82, 82, 82, 0.9);
+}
+
+.team-member .team-name {
+  background-color: #CD853F;
+}
+
+.twitter-stream {
+  background-color: #ac6c2d;
+}
+.twitter-stream .twitter-icon {
+  background-color: #985f28;
+}
+.twitter-stream .twitter-icon i {
+  color: #CD853F;
+}
+
+.chart .percent {
+  color: #CD853F;
+}
