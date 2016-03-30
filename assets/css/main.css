@@ -13,7 +13,7 @@ body {
   line-height: 1.6;
 }
 body.fullscreen-image-background {
-  background-image: url('../img/sliders/slider1.jpg?1394417052');
+  background-image: url('../img/sliders/d17253e13ffbeec8e0b0f6b80c5e3f3d.jpg?1459370281');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -62,8 +62,8 @@ body #jpreBar {
 
 @font-face {
   font-family: "brankic";
-  src: url('../fonts/brankic.eot?1392697956');
-  src: url('../fonts/brankic.eot?&1392697956#iefix') format('embedded-opentype'), url('../fonts/brankic.svg?1392697956') format('svg'), url('../fonts/brankic.ttf?1392697956') format('truetype'), url('../fonts/brankic.woff?1392697956') format('woff');
+  src: url('../fonts/brankic.eot?1392694356');
+  src: url('../fonts/brankic.eot?&1392694356#iefix') format('embedded-opentype'), url('../fonts/brankic.svg?1392694356') format('svg'), url('../fonts/brankic.ttf?1392694356') format('truetype'), url('../fonts/brankic.woff?1392694356') format('woff');
 }
 /* --------------------- */
 /* NAVIGATION BAR
@@ -236,10 +236,10 @@ body #jpreBar {
 }
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active {
   background-color: #00aeef;
-  border-color: #009bd5;
+  border-color: #009bd6;
 }
 .btn-info:active:focus, .btn-info.active:focus {
-  background-color: #009bd5;
+  background-color: #009bd6;
   border-color: #0076a3;
 }
 
@@ -258,10 +258,10 @@ body #jpreBar {
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
   background-color: #ffae3f;
-  border-color: #ffa325;
+  border-color: #ffa326;
 }
 .btn-primary:active:focus, .btn-primary.active:focus {
-  background-color: #ffa325;
+  background-color: #ffa326;
   border-color: #f28c00;
 }
 
@@ -5215,7 +5215,7 @@ img.mfp-img {
   opacity: 0.2;
   width: 100%;
   height: 100%;
-  background-image: url('../img/noise_lines_@2X.png?1342797527');
+  background-image: url('../img/noise_lines_@2X.png?1342793928');
   background-repeat: repeat;
 }
 .hero-unit .hero-content {
@@ -5414,7 +5414,7 @@ img.mfp-img {
 }
 
 #supersized-loader {
-  background-image: url('../img/bx_loader.gif?1379465152');
+  background-image: url('../img/bx_loader.gif?1379461552');
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -5439,7 +5439,7 @@ img.mfp-img {
 /* SOCIAL NETWORK
 /* --------------------- */
 #social-network {
-  background-image: url('../img/sky.jpg?1394021998');
+  background-image: url('../img/sky.jpg?1394018398');
   text-align: center;
 }
 #social-network h2 {
