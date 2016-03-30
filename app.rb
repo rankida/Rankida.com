@@ -4,7 +4,7 @@ require "sinatra/content_for"
 require 'json'
 
 get "/" do
-  erb :jsonEdit
+  erb :home
 end
 
 get '/jsonEditor' do

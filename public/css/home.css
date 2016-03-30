@@ -1,0 +1,43 @@
+body {
+    background-color: #FAFAFA;
+}
+h1{
+    font-family: 'Yellowtail', cursive;
+    font-size: 80px;
+    line-height: 100px;
+    color: #9D2E2C;
+}
+#content {
+    background: white;
+    min-height: 610px;
+    padding: 20px 25px 0px;
+    
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 5px 6px 0;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 5px 6px 0;
+    -o-box-shadow: rgba(0, 0, 0, 0.2) 0 5px 6px 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 5px 6px 0;
+}
+
+#header {
+
+}
+
+div {
+    padding: 5px;
+    margin: 3px;
+}
+.yellow {
+    background-color: #F9EA99;
+}
+.blue {
+    background-color: #7DB6D5;
+}
+.red {
+    background-color: #9D2E2C;
+}
+.orange {
+    background-color: #E7A555;
+}
+.grey {
+    background-color: #4A4747;
+}
