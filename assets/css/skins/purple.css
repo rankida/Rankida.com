@@ -1,0 +1,56 @@
+/* Skin: Rankida Purple */
+a {
+  color: #533F6D;
+}
+a:hover, a:focus {
+  color: #3f3053;
+}
+
+.btn-primary {
+  background-color: #533F6D;
+  border-color: #533F6D;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+  background-color: #533F6D;
+  border-color: #47365d;
+}
+.btn-primary:active:focus, .btn-primary.active:focus {
+  background-color: #47365d;
+  border-color: #2e233d;
+}
+
+.section-heading h2 {
+  color: #533F6D;
+}
+
+.service-item .service-icon,
+.service-item .service-text a.read-more {
+  color: #533F6D;
+}
+
+.work-item-filters li a:hover,
+.work-item-filters li a.active {
+  background-color: #533F6D;
+}
+
+.work-item-list .image-overlay {
+  background-color: rgba(82, 82, 82, 0.9);
+}
+
+.team-member .team-name {
+  background-color: #533F6D;
+}
+
+.twitter-stream {
+  background-color: #3a2c4d;
+}
+.twitter-stream .twitter-icon {
+  background-color: #2e233d;
+}
+.twitter-stream .twitter-icon i {
+  color: #533F6D;
+}
+
+.chart .percent {
+  color: #533F6D;
+}
