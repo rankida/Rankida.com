@@ -6046,6 +6046,10 @@ img.mfp-img {
     padding: 25px 0;
   }
 }
+.twitter-stream .banner-logo {
+  width: 200px;
+  height: auto;
+}
 .twitter-stream .twitter-icon {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -6132,8 +6136,13 @@ img.mfp-img {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.copyright {
+.copyright, .company-number {
   font-size: 0.8em;
   line-height: 36px;
   text-align: center;
+}
+
+.company-number {
+  height: 20px;
+  line-height: 0px;
 }

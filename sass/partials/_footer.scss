@@ -41,3 +41,9 @@
 	line-height: 36px;
 	text-align: center;
 }
+
+.company-number {
+	@extend .copyright;
+	height: 20px;
+	line-height: 0px;
+}
