@@ -20,7 +20,7 @@ body {
 		text-shadow: none;
 		color: $body-text-color;
 	}
-	
+
 	#jpreOverlay {
 		background-color: #fafafa;
 	}
@@ -47,7 +47,7 @@ body {
 	padding: 10px 15px;
 
 	img {
-		width: 74px;
+		width: 150px;
 		height: auto;
 	}
 }
@@ -76,7 +76,7 @@ body {
 		> a {
 			@include transition-property(all);
 			@include transition-duration(0.1s);
-			@include transition-timing-function(ease-out); 
+			@include transition-timing-function(ease-out);
 
 			padding-left: 3px;
 			padding-right: 3px;
@@ -113,14 +113,14 @@ body {
 					border-bottom-color: #fff;
 				}
 			}
-			
+
 			&.active {
 				> a {
 					border-bottom-color: #fff;
 				}
-			}	
+			}
 		}
-	}	
+	}
 }
 
 .navbar {
@@ -159,7 +159,7 @@ body {
 						border-bottom-color: $heading-text-color;
 					}
 				}
-			} 
+			}
 		}
 	}
 }
@@ -208,7 +208,7 @@ body {
 
 .btn-info {
 	background-color: $secondary-accent-color;
-	border-color: $secondary-accent-color;	
+	border-color: $secondary-accent-color;
 
 	&:hover, &:focus, &:active, &.active {
 		background-color: $secondary-accent-color;
@@ -343,7 +343,7 @@ a {
 	&.bottom .tooltip-arrow,
 	&.bottom-left .tooltip-arrow,
 	&.bottom-right .tooltip-arrow {
-		@include opacity(0.5);	
+		@include opacity(0.5);
 	}
 }
 
@@ -376,4 +376,3 @@ a {
 		color: #d2322d;
 	}
 }
-
