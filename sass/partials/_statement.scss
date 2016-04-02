@@ -1,0 +1,22 @@
+/* ------------------ STATEMENT ------------------ */
+
+.statement {
+	text-align: center;
+
+	h1 {
+		font-size: 4em;
+		text-align: center;
+	}
+
+	@include max-screen($screen-xsmall) {
+		h1 {
+			font-size: 2.5em;
+		}
+	}
+
+	@include max-screen($screen-small) {
+		h1 {
+			font-size: 3.5em;
+		}
+	}
+}

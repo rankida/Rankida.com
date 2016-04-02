@@ -51,6 +51,10 @@ a:hover, a:focus {
   color: #CD853F;
 }
 
+.banner {
+  background-color: #ac6c2d;
+}
+
 .chart .percent {
   color: #CD853F;
 }

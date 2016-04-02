@@ -42,13 +42,17 @@ a:hover, a:focus {
 }
 
 .twitter-stream {
-  background-color: #5a6673;
+  background-color: #5a6773;
 }
 .twitter-stream .twitter-icon {
   background-color: #4e5a65;
 }
 .twitter-stream .twitter-icon i {
   color: #708090;
+}
+
+.banner {
+  background-color: #5a6773;
 }
 
 .chart .percent {

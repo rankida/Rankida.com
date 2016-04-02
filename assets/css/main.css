@@ -5607,6 +5607,88 @@ img.mfp-img {
     padding-bottom: 0;
   }
 }
+/* ------------------ STATEMENT ------------------ */
+.statement {
+  text-align: center;
+}
+.statement h1 {
+  font-size: 4em;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .statement h1 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .statement h1 {
+    font-size: 3.5em;
+  }
+}
+
+/* ------------------ TESTIMONIAL ------------------ */
+.testimonial {
+  background-image: url('../img/sky.jpg?1394018398');
+  text-align: center;
+  color: #fff;
+}
+.testimonial .testimonial-text {
+  margin-bottom: 30px;
+  font-size: 3em;
+  font-family: "Dosis", sans-serif;
+}
+@media screen and (max-width: 480px) {
+  .testimonial .testimonial-text {
+    font-size: 2em;
+  }
+}
+.testimonial .testimonial-text .quote-left,
+.testimonial .testimonial-text .quote-right {
+  position: relative;
+}
+.testimonial .testimonial-text .quote-left {
+  margin-right: 10px;
+  top: -10px;
+}
+.testimonial .testimonial-text .quote-right {
+  margin-left: 10px;
+  bottom: -10px;
+}
+.testimonial .testimonial-author .author-name {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.testimonial .testimonial-author .author-title {
+  font-size: 0.9em;
+}
+.testimonial .flexslider {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-bottom: 35px;
+  background: transparent;
+  border: none;
+}
+.testimonial .flex-control-paging li a {
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  -webkit-transition-property: background;
+  transition-property: background;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  background: rgba(255, 255, 255, 0.5);
+}
+.testimonial .flex-control-paging li a:hover, .testimonial .flex-control-paging li a.flex-active {
+  background: rgba(255, 255, 255, 0.9);
+}
+
 /* ------------------ WORKS ------------------ */
 /* ----------------------------- */
 /* RECOMMENDED ISOTOPE STYLES 
@@ -6088,6 +6170,15 @@ img.mfp-img {
 }
 .twitter-stream #tweet ul li .timePosted {
   font-size: 0.8em;
+}
+
+/* ------------------ TECH BANNER ------------------ */
+#tech-banner {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
+  font-size: 7em;
+  text-align: center;
 }
 
 /* ------------------ FOOTER ------------------ */

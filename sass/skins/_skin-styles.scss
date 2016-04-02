@@ -37,7 +37,7 @@ a {
 	}
 }
 
-.work-item-filters li a:hover, 
+.work-item-filters li a:hover,
 .work-item-filters li a.active {
 	background-color: $primary-accent-color;
 }
@@ -63,9 +63,10 @@ a {
 	}
 }
 
+.banner {
+	background-color: darken($primary-accent-color, 10%);
+}
+
 .chart .percent {
 	color: $primary-accent-color;
 }
-
-
-
