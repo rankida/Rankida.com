@@ -6180,6 +6180,39 @@ img.mfp-img {
   font-size: 7em;
   text-align: center;
 }
+#tech-banner .node-logo {
+  height: 240px;
+}
+@media screen and (max-width: 992px) {
+  #tech-banner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 5em;
+  }
+  #tech-banner .node-logo {
+    height: 210px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #tech-banner {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 5em;
+  }
+  #tech-banner .node-logo {
+    height: 190px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #tech-banner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 5em;
+  }
+  #tech-banner .node-logo {
+    height: 170px;
+  }
+}
 
 /* ------------------ FOOTER ------------------ */
 #footer {

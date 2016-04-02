@@ -6,4 +6,35 @@
 	color: white;
 	font-size: 7em;
 	text-align: center;
+
+	.node-logo {
+		height: 240px;
+	}
+
+	@include max-screen($screen-medium) {
+			padding-top: 20px;
+			padding-bottom: 20px;
+			font-size: 5em;
+			.node-logo {
+				height: 210px;
+			}
+	}
+
+	@include max-screen($screen-small) {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			font-size: 5em;
+			.node-logo {
+				height: 190px;
+			}
+	}
+
+	@include max-screen($screen-xsmall) {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			font-size: 5em;
+			.node-logo {
+				height: 170px;
+			}
+	}
 }
