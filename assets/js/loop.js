@@ -275,15 +275,13 @@ jQuery( function($){
 		    dataType: "json"
 		}).then(function(data){
 
-			$message = data.message;
-
-			if( data.result == true ){
+			if(data && data.success){
 				$theForm.slideUp('medium', function() {
 					$alert.removeClass('alert-danger');
-					$alert.addClass('alert-success').html($message).slideDown('medium');
+					$alert.addClass('alert-success').html(data.success).slideDown('medium');
 				});
 			}else {
-				$alert.addClass('alert-danger').html($message).slideDown('medium');
+				$alert.addClass('alert-danger').html("Sorry, something appears to have gone wrong :(").slideDown('medium');
 			}
 
 			$btn.find('.loading-icon').removeClass('fa-spinner fa-spin ');
